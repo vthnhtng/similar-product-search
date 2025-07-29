@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Product Search</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .search-container {
+            padding: 40px;
+        }
+
+        .search-tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .tab {
+            padding: 15px 30px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .tab.active {
+            border-bottom-color: #667eea;
+            color: #667eea;
+        }
+
+        .tab:hover {
+            background-color: #f8f9fa;
+        }
+
+        .search-content {
+            display: none;
+        }
+
+        .search-content.active {
+            display: block;
+        }
+
+        .search-form {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .file-upload {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .file-upload input[type=file] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-upload-label {
+            display: block;
+            padding: 15px;
+            border: 2px dashed #e1e5e9;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .file-upload:hover .file-upload-label {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .search-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .results {
+            margin-top: 30px;
+        }
+
+        .results-header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .result-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .result-content {
+            padding: 20px;
+        }
+
+        .result-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .result-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+        }
+
+        .success {
+            background: #efe;
+            color: #363;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #363;
+        }
+
+        .preview-image {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .search-container {
+                padding: 20px;
+            }
+            
+            .search-tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" x-data="searchApp()">
+        <div class="header">
+            <h1>Similar Product Search</h1>
+            <p>Find similar products using text or image search</p>
+        </div>
+
+        <div class="search-container">
+            <div class="search-tabs">
+                <div class="tab" 
+                     :class="{ 'active': activeTab === 'text' }" 
+                     @click="activeTab = 'text'">
+                    Text Search
+                </div>
+                <div class="tab" 
+                     :class="{ 'active': activeTab === 'image' }" 
+                     @click="activeTab = 'image'">
+                    Image Search
+                </div>
+            </div>
+
+            <!-- Text Search -->
+            <div class="search-content" :class="{ 'active': activeTab === 'text' }">
+                <div class="search-form">
+                    <div class="form-group">
+                        <label class="form-label">Search Query</label>
+                        <input type="text" 
+                               class="form-input" 
+                               x-model="textQuery" 
+                               @input.debounce.100ms="performTextSearch()"
+                               placeholder="Enter your search query...">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Number of Results</label>
+                        <input type="number" 
+                               class="form-input" 
+                               x-model="topK" 
+                               min="1" 
+                               max="50" 
+                               value="10">
+                    </div>
+                    <button class="search-btn" 
+                            @click="performTextSearch()" 
+                            :disabled="textLoading">
+                        <span x-show="!textLoading">Search</span>
+                        <span x-show="textLoading">Searching...</span>
+                        <div class="loading" x-show="textLoading"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image Search -->
+            <div class="search-content" :class="{ 'active': activeTab === 'image' }">
+                <div class="search-form">
+                    <div class="form-group">
+                        <label class="form-label">Upload Image</label>
+                        <div class="file-upload">
+                            <input type="file" 
+                                   @change="handleImageUpload($event)" 
+                                   accept="image/*">
+                            <div class="file-upload-label">
+                                <span x-show="!selectedImage">Click to upload image or drag and drop</span>
+                                <span x-show="selectedImage" x-text="selectedImage.name"></span>
+                            </div>
+                        </div>
+                        <img x-show="imagePreview" 
+                             :src="imagePreview" 
+                             class="preview-image" 
+                             alt="Preview">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Number of Results</label>
+                        <input type="number" 
+                               class="form-input" 
+                               x-model="topK" 
+                               min="1" 
+                               max="50" 
+                               value="10">
+                    </div>
+                    <button class="search-btn" 
+                            @click="performImageSearch()" 
+                            :disabled="imageLoading || !selectedImage">
+                        <span x-show="!imageLoading">Search Similar Images</span>
+                        <span x-show="imageLoading">Searching...</span>
+                        <div class="loading" x-show="imageLoading"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div x-show="message" 
+                 :class="messageType === 'error' ? 'error' : 'success'" 
+                 x-text="message">
+            </div>
+
+            <!-- Results -->
+            <div class="results" x-show="results.length > 0">
+                <div class="results-header">
+                    <h3 x-text="`Found ${results.length} results`"></h3>
+                    <p x-show="activeTab === 'text'" x-text="`Search query: "${currentQuery}"`"></p>
+                    <p x-show="activeTab === 'image'" x-text="`Search image: ${selectedImage ? selectedImage.name : ''}`"></p>
+                </div>
+                
+                <div class="results-grid">
+                    <template x-for="(result, index) in results" :key="index">
+                        <div class="result-card">
+                            <img x-show="result.image_url" 
+                                 :src="result.image_url" 
+                                 :alt="result.title || 'Product image'" 
+                                 class="result-image">
+                            <div class="result-content">
+                                <div class="result-title" x-text="result.title || 'Product'"></div>
+                                <div class="result-description" x-text="result.description || result.content || 'No description available'"></div>
+                                <div x-show="result.similarity" class="result-description">
+                                    Similarity: <span x-text="(result.similarity * 100).toFixed(1) + '%'"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchApp() {
+            return {
+                activeTab: 'text',
+                textQuery: '',
+                selectedImage: null,
+                imagePreview: null,
+                topK: 10,
+                results: [],
+                textLoading: false,
+                imageLoading: false,
+                message: '',
+                messageType: '',
+                currentQuery: '',
+
+                async performTextSearch() {
+                    if (!this.textQuery.trim()) {
+                        this.showMessage('Please enter a search query', 'error');
+                        return;
+                    }
+
+                    this.textLoading = true;
+                    this.currentQuery = this.textQuery;
+                    
+                    try {
+                        const response = await fetch('/search/text', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                query: this.textQuery,
+                                top_k: this.topK
+                            })
+                        });
+
+                        const data = await response.json();
+                        
+                        if (data.success) {
+                            this.results = data.results || [];
+                            this.showMessage(`Found ${this.results.length} results`, 'success');
+                        } else {
+                            this.showMessage(data.error || 'Search failed', 'error');
+                        }
+                    } catch (error) {
+                        this.showMessage('Network error: ' + error.message, 'error');
+                    } finally {
+                        this.textLoading = false;
+                    }
+                },
+
+                handleImageUpload(event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        this.selectedImage = file;
+                        
+                        // Create preview
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            this.imagePreview = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                },
+
+                async performImageSearch() {
+                    if (!this.selectedImage) {
+                        this.showMessage('Please select an image first', 'error');
+                        return;
+                    }
+
+                    this.imageLoading = true;
+                    
+                    try {
+                        const formData = new FormData();
+                        formData.append('image', this.selectedImage);
+                        formData.append('top_k', this.topK);
+
+                        const response = await fetch('/search/image', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        
+                        if (data.success) {
+                            this.results = data.results || [];
+                            this.showMessage(`Found ${this.results.length} similar images`, 'success');
+                        } else {
+                            this.showMessage(data.error || 'Search failed', 'error');
+                        }
+                    } catch (error) {
+                        this.showMessage('Network error: ' + error.message, 'error');
+                    } finally {
+                        this.imageLoading = false;
+                    }
+                },
+
+                showMessage(text, type = 'success') {
+                    this.message = text;
+                    this.messageType = type;
+                    
+                    // Auto-hide success messages after 5 seconds
+                    if (type === 'success') {
+                        setTimeout(() => {
+                            this.message = '';
+                        }, 5000);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html> 

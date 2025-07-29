@@ -1,0 +1,19 @@
+# Logging configuration for the import process
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: '%(asctime)s - %(levelname)s - %(message)s'
+  file_rotation:
+    max_size_mb: 10
+    backup_count: 5
+  
+# Performance tracking settings
+performance:
+  progress_log_interval: 100  # Log progress every N products
+  detailed_timing: true  # Track individual product processing times
+  
+# Output settings
+output:
+  save_metrics: true
+  save_summary: true
+  results_directory: "results"
+  logs_directory: "logs" 

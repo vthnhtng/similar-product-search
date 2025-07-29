@@ -1,1 +1,7 @@
 venv/
+data/
+log/
+results/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/

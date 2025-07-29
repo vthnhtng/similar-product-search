@@ -1,0 +1,10 @@
+redis:
+  host: localhost
+  port: 6379
+  index_name: animal_index
+  prefix: animal
+  vector_dim: 512
+  distance_metric: cosine
+  algorithm: HNSW
+  username:
+  password:

@@ -1,0 +1,30 @@
+2025-07-30 01:33:50,377 - INFO - Starting import process
+2025-07-30 01:33:50,377 - INFO - Dataset directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset
+2025-07-30 01:33:50,391 - INFO - Animal names file: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_names.txt
+2025-07-30 01:33:50,391 - INFO - Animal images directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_images
+2025-07-30 01:33:50,391 - INFO - Animal captions directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_captions
+2025-07-30 01:33:50,391 - INFO - Found 90 animal names to process
+2025-07-30 01:33:50,403 - INFO - Processing animal: antelope
+2025-07-30 01:33:50,404 - INFO - Found 60 images for antelope
+2025-07-30 01:33:50,404 - INFO - Found 60 captions for antelope
+2025-07-30 01:33:50,405 - INFO - Processing antelope: 60 images, 60 captions
+2025-07-30 01:34:11,488 - INFO - Completed processing antelope: 60 successful, 0 failed
+2025-07-30 01:34:11,488 - INFO - Processing animal: badger
+2025-07-30 01:34:11,491 - INFO - Found 60 images for badger
+2025-07-30 01:34:11,491 - INFO - Found 60 captions for badger
+2025-07-30 01:34:11,491 - INFO - Processing badger: 60 images, 60 captions
+2025-07-30 01:34:35,551 - INFO - Completed processing badger: 60 successful, 0 failed
+2025-07-30 01:34:35,553 - INFO - Processing animal: bat
+2025-07-30 01:34:35,553 - INFO - Found 60 images for bat
+2025-07-30 01:34:35,555 - INFO - Found 60 captions for bat
+2025-07-30 01:34:35,555 - INFO - Processing bat: 60 images, 60 captions
+2025-07-30 01:34:57,153 - INFO - Completed processing bat: 60 successful, 0 failed
+2025-07-30 01:34:57,156 - INFO - Processing animal: bear
+2025-07-30 01:34:57,156 - INFO - Found 60 images for bear
+2025-07-30 01:34:57,158 - INFO - Found 60 captions for bear
+2025-07-30 01:34:57,158 - INFO - Processing bear: 60 images, 60 captions
+2025-07-30 01:35:22,620 - INFO - Completed processing bear: 60 successful, 0 failed
+2025-07-30 01:35:22,622 - INFO - Processing animal: bee
+2025-07-30 01:35:22,622 - INFO - Found 60 images for bee
+2025-07-30 01:35:22,622 - INFO - Found 60 captions for bee
+2025-07-30 01:35:22,622 - INFO - Processing bee: 60 images, 60 captions

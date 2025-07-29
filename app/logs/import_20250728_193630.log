@@ -1,0 +1,19 @@
+2025-07-28 19:36:30,153 - INFO - Starting test import with sample data
+2025-07-28 19:36:30,155 - INFO - Loading sample CSV data...
+2025-07-28 19:36:30,181 - INFO - Loaded 10 sample products from CSV
+2025-07-28 19:36:30,181 - INFO - Starting import process for 10 products
+2025-07-28 19:36:30,289 - INFO - Processed product 24-MB01 successfully
+2025-07-28 19:36:30,393 - INFO - Processed product 24-MB04 successfully
+2025-07-28 19:36:30,499 - INFO - Processed product 24-MB03 successfully
+2025-07-28 19:36:30,604 - INFO - Processed product 24-MB05 successfully
+2025-07-28 19:36:30,707 - INFO - Processed product 24-MB06 successfully
+2025-07-28 19:36:30,815 - INFO - Processed product 24-MB02 successfully
+2025-07-28 19:36:30,919 - INFO - Processed product 24-UB02 successfully
+2025-07-28 19:36:31,021 - INFO - Processed product 24-WB01 successfully
+2025-07-28 19:36:31,126 - INFO - Processed product 24-WB02 successfully
+2025-07-28 19:36:31,229 - INFO - Processed product 24-WB05 successfully
+2025-07-28 19:36:31,231 - INFO - Results saved to: results\import_metrics_20250728_193631.json and results\import_summary_20250728_193631.txt
+2025-07-28 19:36:31,231 - INFO - Test import process completed!
+2025-07-28 19:36:31,231 - INFO - Success Rate: 100.0%
+2025-07-28 19:36:31,231 - INFO - Total Time: 1.05 seconds
+2025-07-28 19:36:31,231 - INFO - Throughput: 9.54 products/second

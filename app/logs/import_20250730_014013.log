@@ -1,0 +1,226 @@
+2025-07-30 01:40:14,106 - INFO - Starting import process
+2025-07-30 01:40:14,107 - INFO - Dataset directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset
+2025-07-30 01:40:14,115 - INFO - Animal names file: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_names_famous.txt
+2025-07-30 01:40:14,115 - INFO - Animal images directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_images
+2025-07-30 01:40:14,115 - INFO - Animal captions directory: C:\Users\VThnhTng\Desktop\similar-product-search\app\dataset\animal_captions
+2025-07-30 01:40:14,128 - INFO - Found 20 animal names to process
+2025-07-30 01:40:14,128 - INFO - Starting processing for animal: lion
+2025-07-30 01:40:14,129 - INFO - Found 60 images for lion
+2025-07-30 01:40:14,129 - INFO - Found 60 captions for lion
+2025-07-30 01:40:14,129 - INFO - Processing lion: 60 images, 60 captions
+2025-07-30 01:40:16,777 - INFO - Performance update: 10 images processed, avg 0.265s per image (3.78 images/sec)
+2025-07-30 01:40:19,789 - INFO - Performance update: 20 images processed, avg 0.301s per image (3.32 images/sec)
+2025-07-30 01:40:22,440 - INFO - Performance update: 30 images processed, avg 0.265s per image (3.77 images/sec)
+2025-07-30 01:40:25,689 - INFO - Performance update: 40 images processed, avg 0.325s per image (3.08 images/sec)
+2025-07-30 01:40:29,081 - INFO - Performance update: 50 images processed, avg 0.339s per image (2.95 images/sec)
+2025-07-30 01:40:32,589 - INFO - Performance update: 60 images processed, avg 0.351s per image (2.85 images/sec)
+2025-07-30 01:40:32,589 - INFO - Completed lion: 60 images in 18.46s (3.25 images/sec)
+2025-07-30 01:40:32,590 - INFO - Starting processing for animal: tiger
+2025-07-30 01:40:32,590 - INFO - Found 60 images for tiger
+2025-07-30 01:40:32,591 - INFO - Found 60 captions for tiger
+2025-07-30 01:40:32,592 - INFO - Processing tiger: 60 images, 60 captions
+2025-07-30 01:40:36,553 - INFO - Performance update: 70 images processed, avg 0.396s per image (2.52 images/sec)
+2025-07-30 01:40:39,784 - INFO - Performance update: 80 images processed, avg 0.323s per image (3.10 images/sec)
+2025-07-30 01:40:43,398 - INFO - Performance update: 90 images processed, avg 0.361s per image (2.77 images/sec)
+2025-07-30 01:40:46,691 - INFO - Performance update: 100 images processed, avg 0.329s per image (3.04 images/sec)
+2025-07-30 01:40:50,764 - INFO - Performance update: 110 images processed, avg 0.407s per image (2.46 images/sec)
+2025-07-30 01:40:53,827 - INFO - Performance update: 120 images processed, avg 0.306s per image (3.27 images/sec)
+2025-07-30 01:40:53,828 - INFO - Completed tiger: 60 images in 21.24s (2.83 images/sec)
+2025-07-30 01:40:53,828 - INFO - Starting processing for animal: elephant
+2025-07-30 01:40:53,829 - INFO - Found 60 images for elephant
+2025-07-30 01:40:53,830 - INFO - Found 60 captions for elephant
+2025-07-30 01:40:53,830 - INFO - Processing elephant: 60 images, 60 captions
+2025-07-30 01:40:57,075 - INFO - Performance update: 130 images processed, avg 0.324s per image (3.08 images/sec)
+2025-07-30 01:41:00,896 - INFO - Performance update: 140 images processed, avg 0.382s per image (2.62 images/sec)
+2025-07-30 01:41:04,349 - INFO - Performance update: 150 images processed, avg 0.345s per image (2.90 images/sec)
+2025-07-30 01:41:07,900 - INFO - Performance update: 160 images processed, avg 0.355s per image (2.82 images/sec)
+2025-07-30 01:41:11,048 - INFO - Performance update: 170 images processed, avg 0.314s per image (3.18 images/sec)
+2025-07-30 01:41:15,143 - INFO - Performance update: 180 images processed, avg 0.409s per image (2.44 images/sec)
+2025-07-30 01:41:15,144 - INFO - Completed elephant: 60 images in 21.31s (2.81 images/sec)
+2025-07-30 01:41:15,144 - INFO - Starting processing for animal: dog
+2025-07-30 01:41:15,145 - INFO - Found 60 images for dog
+2025-07-30 01:41:15,146 - INFO - Found 60 captions for dog
+2025-07-30 01:41:15,146 - INFO - Processing dog: 60 images, 60 captions
+2025-07-30 01:41:18,886 - INFO - Performance update: 190 images processed, avg 0.374s per image (2.67 images/sec)
+2025-07-30 01:41:22,397 - INFO - Performance update: 200 images processed, avg 0.351s per image (2.85 images/sec)
+2025-07-30 01:41:25,580 - INFO - Performance update: 210 images processed, avg 0.318s per image (3.14 images/sec)
+2025-07-30 01:41:28,862 - INFO - Performance update: 220 images processed, avg 0.328s per image (3.05 images/sec)
+2025-07-30 01:41:32,676 - INFO - Performance update: 230 images processed, avg 0.381s per image (2.62 images/sec)
+2025-07-30 01:41:36,255 - INFO - Performance update: 240 images processed, avg 0.358s per image (2.79 images/sec)
+2025-07-30 01:41:36,256 - INFO - Completed dog: 60 images in 21.11s (2.84 images/sec)
+2025-07-30 01:41:36,256 - INFO - Starting processing for animal: cat
+2025-07-30 01:41:36,257 - INFO - Found 60 images for cat
+2025-07-30 01:41:36,258 - INFO - Found 60 captions for cat
+2025-07-30 01:41:36,258 - INFO - Processing cat: 60 images, 60 captions
+2025-07-30 01:41:40,269 - INFO - Performance update: 250 images processed, avg 0.401s per image (2.49 images/sec)
+2025-07-30 01:41:43,719 - INFO - Performance update: 260 images processed, avg 0.345s per image (2.90 images/sec)
+2025-07-30 01:41:46,893 - INFO - Performance update: 270 images processed, avg 0.317s per image (3.15 images/sec)
+2025-07-30 01:41:50,071 - INFO - Performance update: 280 images processed, avg 0.318s per image (3.15 images/sec)
+2025-07-30 01:41:53,163 - INFO - Performance update: 290 images processed, avg 0.309s per image (3.23 images/sec)
+2025-07-30 01:41:56,164 - INFO - Performance update: 300 images processed, avg 0.300s per image (3.33 images/sec)
+2025-07-30 01:41:56,164 - INFO - Completed cat: 60 images in 19.91s (3.01 images/sec)
+2025-07-30 01:41:56,165 - INFO - Starting processing for animal: bear
+2025-07-30 01:41:56,165 - INFO - Found 60 images for bear
+2025-07-30 01:41:56,167 - INFO - Found 60 captions for bear
+2025-07-30 01:41:56,167 - INFO - Processing bear: 60 images, 60 captions
+2025-07-30 01:41:59,368 - INFO - Performance update: 310 images processed, avg 0.320s per image (3.12 images/sec)
+2025-07-30 01:42:02,881 - INFO - Performance update: 320 images processed, avg 0.351s per image (2.85 images/sec)
+2025-07-30 01:42:06,011 - INFO - Performance update: 330 images processed, avg 0.313s per image (3.20 images/sec)
+2025-07-30 01:42:09,741 - INFO - Performance update: 340 images processed, avg 0.373s per image (2.68 images/sec)
+2025-07-30 01:42:13,243 - INFO - Performance update: 350 images processed, avg 0.350s per image (2.86 images/sec)
+2025-07-30 01:42:17,188 - INFO - Performance update: 360 images processed, avg 0.394s per image (2.54 images/sec)
+2025-07-30 01:42:17,188 - INFO - Completed bear: 60 images in 21.02s (2.85 images/sec)
+2025-07-30 01:42:17,188 - INFO - Starting processing for animal: wolf
+2025-07-30 01:42:17,189 - INFO - Found 60 images for wolf
+2025-07-30 01:42:17,190 - INFO - Found 60 captions for wolf
+2025-07-30 01:42:17,190 - INFO - Processing wolf: 60 images, 60 captions
+2025-07-30 01:42:20,795 - INFO - Performance update: 370 images processed, avg 0.361s per image (2.77 images/sec)
+2025-07-30 01:42:24,230 - INFO - Performance update: 380 images processed, avg 0.343s per image (2.91 images/sec)
+2025-07-30 01:42:27,408 - INFO - Performance update: 390 images processed, avg 0.318s per image (3.15 images/sec)
+2025-07-30 01:42:31,103 - INFO - Performance update: 400 images processed, avg 0.369s per image (2.71 images/sec)
+2025-07-30 01:42:35,080 - INFO - Performance update: 410 images processed, avg 0.398s per image (2.51 images/sec)
+2025-07-30 01:42:38,814 - INFO - Performance update: 420 images processed, avg 0.373s per image (2.68 images/sec)
+2025-07-30 01:42:38,814 - INFO - Completed wolf: 60 images in 21.63s (2.77 images/sec)
+2025-07-30 01:42:38,814 - INFO - Starting processing for animal: horse
+2025-07-30 01:42:38,814 - INFO - Found 60 images for horse
+2025-07-30 01:42:38,818 - INFO - Found 60 captions for horse
+2025-07-30 01:42:38,818 - INFO - Processing horse: 60 images, 60 captions
+2025-07-30 01:42:41,883 - INFO - Performance update: 430 images processed, avg 0.306s per image (3.26 images/sec)
+2025-07-30 01:42:44,989 - INFO - Performance update: 440 images processed, avg 0.310s per image (3.22 images/sec)
+2025-07-30 01:42:48,027 - INFO - Performance update: 450 images processed, avg 0.304s per image (3.29 images/sec)
+2025-07-30 01:42:51,924 - INFO - Performance update: 460 images processed, avg 0.390s per image (2.57 images/sec)
+2025-07-30 01:42:55,738 - INFO - Performance update: 470 images processed, avg 0.381s per image (2.62 images/sec)
+2025-07-30 01:42:59,143 - INFO - Performance update: 480 images processed, avg 0.340s per image (2.94 images/sec)
+2025-07-30 01:42:59,144 - INFO - Completed horse: 60 images in 20.33s (2.95 images/sec)
+2025-07-30 01:42:59,144 - INFO - Starting processing for animal: dolphin
+2025-07-30 01:42:59,145 - INFO - Found 60 images for dolphin
+2025-07-30 01:42:59,146 - INFO - Found 60 captions for dolphin
+2025-07-30 01:42:59,146 - INFO - Processing dolphin: 60 images, 60 captions
+2025-07-30 01:43:02,374 - INFO - Performance update: 490 images processed, avg 0.323s per image (3.10 images/sec)
+2025-07-30 01:43:06,653 - INFO - Performance update: 500 images processed, avg 0.428s per image (2.34 images/sec)
+2025-07-30 01:43:10,044 - INFO - Performance update: 510 images processed, avg 0.339s per image (2.95 images/sec)
+2025-07-30 01:43:13,264 - INFO - Performance update: 520 images processed, avg 0.322s per image (3.11 images/sec)
+2025-07-30 01:43:16,296 - INFO - Performance update: 530 images processed, avg 0.303s per image (3.30 images/sec)
+2025-07-30 01:43:19,926 - INFO - Performance update: 540 images processed, avg 0.363s per image (2.76 images/sec)
+2025-07-30 01:43:19,926 - INFO - Completed dolphin: 60 images in 20.78s (2.89 images/sec)
+2025-07-30 01:43:19,926 - INFO - Starting processing for animal: chimpanzee
+2025-07-30 01:43:19,928 - INFO - Found 60 images for chimpanzee
+2025-07-30 01:43:19,928 - INFO - Found 60 captions for chimpanzee
+2025-07-30 01:43:19,928 - INFO - Processing chimpanzee: 60 images, 60 captions
+2025-07-30 01:43:23,857 - INFO - Performance update: 550 images processed, avg 0.393s per image (2.54 images/sec)
+2025-07-30 01:43:27,882 - INFO - Performance update: 560 images processed, avg 0.402s per image (2.49 images/sec)
+2025-07-30 01:43:31,472 - INFO - Performance update: 570 images processed, avg 0.359s per image (2.79 images/sec)
+2025-07-30 01:43:35,071 - INFO - Performance update: 580 images processed, avg 0.360s per image (2.78 images/sec)
+2025-07-30 01:43:39,234 - INFO - Performance update: 590 images processed, avg 0.416s per image (2.40 images/sec)
+2025-07-30 01:43:43,066 - INFO - Performance update: 600 images processed, avg 0.383s per image (2.61 images/sec)
+2025-07-30 01:43:43,066 - INFO - Completed chimpanzee: 60 images in 23.14s (2.59 images/sec)
+2025-07-30 01:43:43,066 - INFO - Starting processing for animal: panda
+2025-07-30 01:43:43,066 - INFO - Found 60 images for panda
+2025-07-30 01:43:43,069 - INFO - Found 60 captions for panda
+2025-07-30 01:43:43,069 - INFO - Processing panda: 60 images, 60 captions
+2025-07-30 01:43:46,490 - INFO - Performance update: 610 images processed, avg 0.342s per image (2.92 images/sec)
+2025-07-30 01:43:50,260 - INFO - Performance update: 620 images processed, avg 0.377s per image (2.65 images/sec)
+2025-07-30 01:43:53,836 - INFO - Performance update: 630 images processed, avg 0.357s per image (2.80 images/sec)
+2025-07-30 01:43:58,389 - INFO - Performance update: 640 images processed, avg 0.455s per image (2.20 images/sec)
+2025-07-30 01:44:02,937 - INFO - Performance update: 650 images processed, avg 0.455s per image (2.20 images/sec)
+2025-07-30 01:44:06,923 - INFO - Performance update: 660 images processed, avg 0.399s per image (2.51 images/sec)
+2025-07-30 01:44:06,929 - INFO - Completed panda: 60 images in 23.86s (2.51 images/sec)
+2025-07-30 01:44:06,930 - INFO - Starting processing for animal: penguin
+2025-07-30 01:44:06,930 - INFO - Found 60 images for penguin
+2025-07-30 01:44:06,931 - INFO - Found 60 captions for penguin
+2025-07-30 01:44:06,932 - INFO - Processing penguin: 60 images, 60 captions
+2025-07-30 01:44:11,254 - INFO - Performance update: 670 images processed, avg 0.432s per image (2.31 images/sec)
+2025-07-30 01:44:15,266 - INFO - Performance update: 680 images processed, avg 0.401s per image (2.49 images/sec)
+2025-07-30 01:44:18,877 - INFO - Performance update: 690 images processed, avg 0.361s per image (2.77 images/sec)
+2025-07-30 01:44:22,603 - INFO - Performance update: 700 images processed, avg 0.373s per image (2.68 images/sec)
+2025-07-30 01:44:26,115 - INFO - Performance update: 710 images processed, avg 0.351s per image (2.85 images/sec)
+2025-07-30 01:44:30,193 - INFO - Performance update: 720 images processed, avg 0.408s per image (2.45 images/sec)
+2025-07-30 01:44:30,193 - INFO - Completed penguin: 60 images in 23.26s (2.58 images/sec)
+2025-07-30 01:44:30,193 - INFO - Starting processing for animal: shark
+2025-07-30 01:44:30,194 - INFO - Found 60 images for shark
+2025-07-30 01:44:30,195 - INFO - Found 60 captions for shark
+2025-07-30 01:44:30,195 - INFO - Processing shark: 60 images, 60 captions
+2025-07-30 01:44:33,677 - INFO - Performance update: 730 images processed, avg 0.348s per image (2.87 images/sec)
+2025-07-30 01:44:37,317 - INFO - Performance update: 740 images processed, avg 0.364s per image (2.75 images/sec)
+2025-07-30 01:44:41,124 - INFO - Performance update: 750 images processed, avg 0.381s per image (2.63 images/sec)
+2025-07-30 01:44:44,510 - INFO - Performance update: 760 images processed, avg 0.339s per image (2.95 images/sec)
+2025-07-30 01:44:48,009 - INFO - Performance update: 770 images processed, avg 0.350s per image (2.86 images/sec)
+2025-07-30 01:44:51,866 - INFO - Performance update: 780 images processed, avg 0.386s per image (2.59 images/sec)
+2025-07-30 01:44:51,866 - INFO - Completed shark: 60 images in 21.67s (2.77 images/sec)
+2025-07-30 01:44:51,866 - INFO - Starting processing for animal: whale
+2025-07-30 01:44:51,866 - INFO - Found 60 images for whale
+2025-07-30 01:44:51,866 - INFO - Found 60 captions for whale
+2025-07-30 01:44:51,866 - INFO - Processing whale: 60 images, 60 captions
+2025-07-30 01:44:55,366 - INFO - Performance update: 790 images processed, avg 0.350s per image (2.86 images/sec)
+2025-07-30 01:44:59,051 - INFO - Performance update: 800 images processed, avg 0.368s per image (2.71 images/sec)
+2025-07-30 01:45:02,570 - INFO - Performance update: 810 images processed, avg 0.352s per image (2.84 images/sec)
+2025-07-30 01:45:06,077 - INFO - Performance update: 820 images processed, avg 0.351s per image (2.85 images/sec)
+2025-07-30 01:45:09,807 - INFO - Performance update: 830 images processed, avg 0.373s per image (2.68 images/sec)
+2025-07-30 01:45:13,372 - INFO - Performance update: 840 images processed, avg 0.356s per image (2.81 images/sec)
+2025-07-30 01:45:13,372 - INFO - Completed whale: 60 images in 21.51s (2.79 images/sec)
+2025-07-30 01:45:13,373 - INFO - Starting processing for animal: snake
+2025-07-30 01:45:13,373 - INFO - Found 60 images for snake
+2025-07-30 01:45:13,374 - INFO - Found 60 captions for snake
+2025-07-30 01:45:13,375 - INFO - Processing snake: 60 images, 60 captions
+2025-07-30 01:45:16,942 - INFO - Performance update: 850 images processed, avg 0.357s per image (2.80 images/sec)
+2025-07-30 01:45:20,966 - INFO - Performance update: 860 images processed, avg 0.402s per image (2.49 images/sec)
+2025-07-30 01:45:24,304 - INFO - Performance update: 870 images processed, avg 0.334s per image (3.00 images/sec)
+2025-07-30 01:45:27,957 - INFO - Performance update: 880 images processed, avg 0.365s per image (2.74 images/sec)
+2025-07-30 01:45:31,516 - INFO - Performance update: 890 images processed, avg 0.356s per image (2.81 images/sec)
+2025-07-30 01:45:35,156 - INFO - Performance update: 900 images processed, avg 0.364s per image (2.75 images/sec)
+2025-07-30 01:45:35,158 - INFO - Completed snake: 60 images in 21.79s (2.75 images/sec)
+2025-07-30 01:45:35,158 - INFO - Starting processing for animal: owl
+2025-07-30 01:45:35,158 - INFO - Found 60 images for owl
+2025-07-30 01:45:35,160 - INFO - Found 60 captions for owl
+2025-07-30 01:45:35,160 - INFO - Processing owl: 60 images, 60 captions
+2025-07-30 01:45:38,843 - INFO - Performance update: 910 images processed, avg 0.368s per image (2.72 images/sec)
+2025-07-30 01:45:42,786 - INFO - Performance update: 920 images processed, avg 0.391s per image (2.56 images/sec)
+2025-07-30 01:45:46,166 - INFO - Performance update: 930 images processed, avg 0.338s per image (2.96 images/sec)
+2025-07-30 01:45:49,761 - INFO - Performance update: 940 images processed, avg 0.359s per image (2.78 images/sec)
+2025-07-30 01:45:53,262 - INFO - Performance update: 950 images processed, avg 0.350s per image (2.86 images/sec)
+2025-07-30 01:45:57,324 - INFO - Performance update: 960 images processed, avg 0.406s per image (2.46 images/sec)
+2025-07-30 01:45:57,326 - INFO - Completed owl: 60 images in 22.17s (2.71 images/sec)
+2025-07-30 01:45:57,326 - INFO - Starting processing for animal: fox
+2025-07-30 01:45:57,326 - INFO - Found 60 images for fox
+2025-07-30 01:45:57,328 - INFO - Found 60 captions for fox
+2025-07-30 01:45:57,328 - INFO - Processing fox: 60 images, 60 captions
+2025-07-30 01:46:01,110 - INFO - Performance update: 970 images processed, avg 0.378s per image (2.64 images/sec)
+2025-07-30 01:46:04,902 - INFO - Performance update: 980 images processed, avg 0.379s per image (2.64 images/sec)
+2025-07-30 01:46:08,898 - INFO - Performance update: 990 images processed, avg 0.399s per image (2.50 images/sec)
+2025-07-30 01:46:12,462 - INFO - Performance update: 1000 images processed, avg 0.356s per image (2.81 images/sec)
+2025-07-30 01:46:16,238 - INFO - Performance update: 1010 images processed, avg 0.378s per image (2.65 images/sec)
+2025-07-30 01:46:19,963 - INFO - Performance update: 1020 images processed, avg 0.373s per image (2.68 images/sec)
+2025-07-30 01:46:19,963 - INFO - Completed fox: 60 images in 22.64s (2.65 images/sec)
+2025-07-30 01:46:19,963 - INFO - Starting processing for animal: cow
+2025-07-30 01:46:19,963 - INFO - Found 60 images for cow
+2025-07-30 01:46:19,967 - INFO - Found 60 captions for cow
+2025-07-30 01:46:19,967 - INFO - Processing cow: 60 images, 60 captions
+2025-07-30 01:46:23,577 - INFO - Performance update: 1030 images processed, avg 0.361s per image (2.77 images/sec)
+2025-07-30 01:46:27,498 - INFO - Performance update: 1040 images processed, avg 0.392s per image (2.55 images/sec)
+2025-07-30 01:46:30,973 - INFO - Performance update: 1050 images processed, avg 0.348s per image (2.88 images/sec)
+2025-07-30 01:46:34,714 - INFO - Performance update: 1060 images processed, avg 0.374s per image (2.67 images/sec)
+2025-07-30 01:46:38,733 - INFO - Performance update: 1070 images processed, avg 0.402s per image (2.49 images/sec)
+2025-07-30 01:46:42,073 - INFO - Performance update: 1080 images processed, avg 0.334s per image (2.99 images/sec)
+2025-07-30 01:46:42,073 - INFO - Completed cow: 60 images in 22.11s (2.71 images/sec)
+2025-07-30 01:46:42,073 - INFO - Starting processing for animal: zebra
+2025-07-30 01:46:42,073 - INFO - Found 60 images for zebra
+2025-07-30 01:46:42,075 - INFO - Found 60 captions for zebra
+2025-07-30 01:46:42,075 - INFO - Processing zebra: 60 images, 60 captions
+2025-07-30 01:46:45,437 - INFO - Performance update: 1090 images processed, avg 0.336s per image (2.97 images/sec)
+2025-07-30 01:46:49,289 - INFO - Performance update: 1100 images processed, avg 0.385s per image (2.60 images/sec)
+2025-07-30 01:46:53,115 - INFO - Performance update: 1110 images processed, avg 0.383s per image (2.61 images/sec)
+2025-07-30 01:46:58,542 - INFO - Performance update: 1120 images processed, avg 0.543s per image (1.84 images/sec)
+2025-07-30 01:47:02,078 - INFO - Performance update: 1130 images processed, avg 0.353s per image (2.83 images/sec)
+2025-07-30 01:47:05,113 - INFO - Performance update: 1140 images processed, avg 0.304s per image (3.29 images/sec)
+2025-07-30 01:47:05,115 - INFO - Completed zebra: 60 images in 23.04s (2.60 images/sec)
+2025-07-30 01:47:05,115 - INFO - Starting processing for animal: leopard
+2025-07-30 01:47:05,115 - INFO - Found 60 images for leopard
+2025-07-30 01:47:05,117 - INFO - Found 60 captions for leopard
+2025-07-30 01:47:05,117 - INFO - Processing leopard: 60 images, 60 captions
+2025-07-30 01:47:08,622 - INFO - Performance update: 1150 images processed, avg 0.350s per image (2.85 images/sec)
+2025-07-30 01:47:12,368 - INFO - Performance update: 1160 images processed, avg 0.375s per image (2.67 images/sec)
+2025-07-30 01:47:15,723 - INFO - Performance update: 1170 images processed, avg 0.335s per image (2.98 images/sec)
+2025-07-30 01:47:19,387 - INFO - Performance update: 1180 images processed, avg 0.366s per image (2.73 images/sec)
+2025-07-30 01:47:22,875 - INFO - Performance update: 1190 images processed, avg 0.349s per image (2.87 images/sec)
+2025-07-30 01:47:26,287 - INFO - Performance update: 1200 images processed, avg 0.341s per image (2.93 images/sec)
+2025-07-30 01:47:26,287 - INFO - Completed leopard: 60 images in 21.17s (2.83 images/sec)
