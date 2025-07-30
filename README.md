@@ -2,6 +2,8 @@
 
 A Flask web application that provides text and image search functionality for finding similar products. The application features a modern, responsive UI with debounced text search and image upload capabilities.
 
+![preview app](./preview.png)
+
 ## Features
 
 - **Text Search**: Real-time search with debouncing (500ms delay)
